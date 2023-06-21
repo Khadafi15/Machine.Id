@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+ 
+* {
+   box-sizing: border-box;
+}
+body {
+   font-family: 'Quicksand', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+header {
+   display: inline;
+}
+
+.profile header {
+   text-align: center;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #005555;
+    text-align: center;
+    color: white;
+ }
+
+nav {
+    background-color: #069A8E;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+ }
+
+ 
+main {
+   padding: 20px;
+   overflow: auto;
+}
+
+
+nav a {
+   font-weight: bold;
+   font-size: 18px;
+   font-weight: 400;
+   text-decoration: none;
+   color: white;
+}
+
+nav a:hover {
+   font-weight: bold;
+}
+
+
+.featured-image {
+   width: 50%;
+   max-height: 500px;
+   object-fit: cover;
+   object-position: center;
+}
+
+.featured-image1 {
+   width: 100%;
+   max-height: 500px;
+   object-fit: cover;
+   object-position: center;
+}
+
+
+.featured-image2 {
+   width: 100%;
+   max-height: 500px;
+   object-fit: cover;
+   object-position: center;
+}
+
+h2, h3 {
+   color: #005555
+}
+
+h3 {
+   color: #069A8E
+}
+
+
+.profile img {
+   width: 200px;
+}
+
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+
+nav li {
+   display: inline;
+   list-style-type: none;
+   margin-right: 20px;
+}
+
+.slides .slide img{
+   width: 50%;
+   animation-name: slidein;
+   animation-duration: 1.5s;
+ }
+
+.slides .navigation .prev, .slides .navigation .next{
+   cursor: pointer;
+   padding: 16px;
+   font-weight: bold;
+   font-size: 20px;
+   color: white;
+   background: rgba(0,0,0,0.2);
+   user-select: none;
+   transition: 0.5s ease;
+ }
+
+.slides .navigation .prev:hover, .slides .navigation .next:hover{
+   background: rgba(0,0,0,1);
+ }
+ 
+
+#content {
+   float: left;
+   width: 75%;
+}
+
+aside {
+   float: right;
+   width: 25%;
+   padding-left: 20px;
+   }
+
+@media screen and (max-width: 1000px) {
+   #content,
+   aside {
+       width: 100%;
+       padding: 0;
+
+   }
+}
+
+footer {
+   padding: 20px;
+   color: white;
+   background-color: #069A8E;
+   text-align: center;
+   font-weight: bold;
+}
